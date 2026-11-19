@@ -1,0 +1,16 @@
+PERBAIKAN TAMPILAN MOBILE ADB CREATIVE TEAM
+
+Perbaikan:
+- Memastikan judul, deskripsi, dan tombol hero selalu terlihat.
+- Mematikan efek reveal yang berpotensi membuat konten hero tersembunyi saat JavaScript gagal atau lambat.
+- Mengatur ulang susunan hero untuk layar HP agar teks tidak tertutup kartu visual.
+- Memperbaiki ukuran judul, jarak, dan pembungkus tombol di layar kecil.
+
+Cara memasang:
+1. Ekstrak ZIP ini.
+2. Upload semua isi folder ke root repository GitHub dan pilih Replace untuk file yang sama.
+3. Pastikan index.html, main.js, style.css, config.js, admin.html, admin.js, schema.sql, seed.sql, dan folder assets ada di root sesuai struktur ZIP.
+4. Tunggu GitHub Pages selesai deploy.
+5. Buka ulang website. Jika masih versi lama, refresh paksa atau hapus cache browser.
+
+Catatan: Perubahan ini memperbaiki tampilan CSS. Tidak mengubah database atau kredensial Supabase.
