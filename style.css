@@ -240,3 +240,48 @@ input,textarea,select{max-width:100%}
   .footer .adb-brand{width:138px;flex-basis:138px;}
   .admin-brand{width:148px;max-width:148px;flex-basis:148px;}
 }
+
+
+/* FINAL VISIBILITY PATCH: dependable ADB logo + readable text */
+.site-header{min-height:92px!important;height:auto!important;padding:8px clamp(14px,4vw,64px)!important;display:flex!important;align-items:center!important;gap:14px!important;overflow:visible!important;}
+.adb-brand,.site-header .adb-brand,.footer .adb-brand,.admin-brand{display:flex!important;align-items:center!important;justify-content:flex-start!important;flex:0 1 210px!important;width:210px!important;max-width:42vw!important;min-width:120px!important;min-height:0!important;overflow:visible!important;line-height:0!important;}
+.adb-logo{display:block!important;width:100%!important;height:auto!important;max-height:82px!important;aspect-ratio:1180/600!important;object-fit:contain!important;object-position:left center!important;opacity:1!important;visibility:visible!important;filter:none!important;background:#073b83!important;border:0!important;border-radius:8px!important;}
+.site-header .nav{flex:1 1 auto!important;min-width:0!important;}
+/* Readable contrast on light surfaces; keep the dark contact/footer palette intact. */
+body{color:#17233b!important;}
+.site-header,.site-header .nav,.site-header .nav a{color:#263752!important;opacity:1!important;}
+main p,main li,main small,main label,main .head-note,main .data-note,main .hero-desc,main .intro-text p,main .activity-list p,main .project-info p,main .stats span{color:#465873!important;opacity:1!important;}
+main h1,main h2,main h3,main strong,main b{opacity:1!important;}
+.eyebrow,.section-kicker,.hero-scroll,.visual-label,.activity-number{color:#40516d!important;opacity:1!important;}
+.contact-section,.contact-section *{color:inherit;}
+.contact-section .section-kicker{color:#d5e2fb!important;}
+.contact-section .contact-top p,.contact-section .feedback-form label{color:#e0e8f6!important;}
+.contact-section .form-heading small{color:#c8d5ea!important;}
+.footer,.footer *{opacity:1!important;}
+.footer,.footer a,.footer small{color:#e0e8f6!important;}
+.admin-body,.admin-body *{opacity:1!important;}
+.admin-body p,.admin-body small,.admin-body label{color:#465873!important;}
+@media(max-width:1300px){.site-header{min-height:82px!important;}.site-header .adb-brand{flex-basis:170px!important;width:170px!important;max-width:55vw!important;}.adb-logo{max-height:68px!important;}.site-header .menu-toggle{display:block!important;flex:0 0 42px!important;margin-left:auto!important;}.site-header .nav{display:none!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;z-index:100!important;background:#fff!important;padding:14px 6% 20px!important;box-shadow:0 18px 30px #1b376014!important;flex-direction:column!important;align-items:stretch!important;}.site-header .nav.open{display:flex!important;}}
+@media(max-width:680px){.site-header{min-height:78px!important;padding:6px 14px!important;}.site-header .adb-brand{flex-basis:150px!important;width:150px!important;max-width:calc(100vw - 90px)!important;min-width:0!important;}.adb-logo{max-height:62px!important;}.footer .adb-brand{width:170px!important;max-width:100%!important;}}
+
+
+/* FINAL FOOTER CONTRAST FIX */
+.footer {
+  background: #0d1932 !important;
+  color: #f1f5ff !important;
+}
+.footer a:not(.adb-brand),
+.footer a:not(.adb-brand):visited,
+.footer small,
+.footer small *,
+.footer .footer-instagram {
+  color: #eaf1ff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: none !important;
+}
+.footer .adb-brand,
+.footer .adb-brand img {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
