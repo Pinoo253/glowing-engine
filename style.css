@@ -153,3 +153,90 @@ input,textarea,select{max-width:100%}
   .footer{grid-template-columns:1fr}
   .footer>a:nth-child(3){text-align:left}
 }
+
+
+/* ADB LOGO — consistent across public and admin pages */
+.adb-brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex:0 0 164px;
+  width:164px;
+  max-width:164px;
+  min-width:0;
+  gap:0;
+  padding:0;
+  line-height:0;
+  overflow:visible;
+}
+.adb-logo{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:320 / 163;
+  object-fit:contain;
+  object-position:center;
+  border:1px solid #1d4d91;
+  border-radius:9px;
+  background:#0b367b;
+  box-shadow:0 3px 12px #0b367b18;
+}
+.site-header{
+  height:auto;
+  min-height:86px;
+  padding:7px 6.5%;
+  gap:18px;
+}
+.site-header .adb-brand{flex-basis:164px;}
+.site-header .nav{flex:1 1 auto;justify-content:flex-end;min-width:0;}
+.footer .adb-brand{width:164px;max-width:100%;flex-basis:164px;}
+.footer .adb-logo{border-color:#31558a;}
+.admin-brand{width:190px;max-width:190px;flex-basis:190px;}
+
+@media (max-width:1200px){
+  .site-header{min-height:76px;padding:6px 5%;gap:12px;}
+  .site-header .adb-brand{flex-basis:146px;width:146px;max-width:146px;}
+  .menu-toggle{
+    display:block;
+    flex:0 0 42px;
+    width:42px;
+    height:42px;
+    border:0;
+    border-radius:10px;
+    background:#eef4ff;
+    color:#14213c;
+  }
+  .site-header .nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    max-height:calc(100vh - 80px);
+    overflow:auto;
+    padding:14px 6% 20px;
+    background:#fff;
+    box-shadow:0 18px 30px #1b376014;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:flex-start;
+    gap:0;
+    white-space:normal;
+  }
+  .site-header .nav.open{display:flex;}
+  .site-header .nav a{padding:12px 0;border-bottom:1px solid #edf1f7;}
+  .site-header .nav .nav-cta{margin-top:10px;padding:13px 18px;text-align:center;border:0;}
+  .admin-brand{width:180px;max-width:180px;flex-basis:180px;}
+}
+@media (max-width:680px){
+  .site-header{min-height:72px;padding:5px 5%;gap:10px;}
+  .site-header .adb-brand{width:144px;max-width:144px;flex-basis:144px;}
+  .menu-toggle{width:40px;height:40px;flex-basis:40px;}
+  .footer .adb-brand{width:148px;flex-basis:148px;}
+  .admin-brand{width:160px;max-width:160px;flex-basis:160px;}
+}
+@media (max-width:380px){
+  .site-header .adb-brand{width:130px;max-width:130px;flex-basis:130px;}
+  .footer .adb-brand{width:138px;flex-basis:138px;}
+  .admin-brand{width:148px;max-width:148px;flex-basis:148px;}
+}

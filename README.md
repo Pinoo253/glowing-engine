@@ -1,6 +1,6 @@
 # ADB Creative Team — SMK Negeri 1 Adiwerna
 
-Website portfolio ADB Creative Team dengan Supabase CMS. Identitas sekolah menggunakan logo resmi yang disediakan pada `assets/logo-sekolah.jpg`.
+Website portfolio ADB Creative Team dengan Supabase CMS. Identitas website menggunakan logo ADB Creative Team pada `assets/adb-creative-team-logo.webp`. Logo yang sama dipakai pada halaman publik, footer, dan dashboard admin.
 
 ## File penting
 
@@ -8,7 +8,8 @@ Website portfolio ADB Creative Team dengan Supabase CMS. Identitas sekolah mengg
 - `admin.html`, `admin.js`: dashboard login dan pengelolaan konten.
 - `config.js`: Project URL dan Publishable Key Supabase.
 - `schema.sql`: tabel, RLS, admin authorization, dan Storage bucket.
-- `assets/logo-sekolah.jpg`: logo sekolah.
+- `assets/adb-creative-team-logo.webp`: logo ADB Creative Team yang tampil di header, footer, dan dashboard admin.
+- `assets/logo-sekolah.jpg`: arsip logo sekolah.
 
 ## Setup Supabase
 
@@ -25,7 +26,7 @@ values ('UUID-AKUN-ADMIN')
 on conflict (user_id) do nothing;
 ```
 
-7. Deploy seluruh isi repository ke hosting static (GitHub Pages dapat digunakan).
+7. Deploy seluruh isi folder website, termasuk folder `assets` dan file `assets/adb-creative-team-logo.webp`, ke hosting static (GitHub Pages dapat digunakan).
 8. Buka `admin.html`, login, lalu tambah foto, video, berita, pencapaian, agenda, atau pengumuman.
 
 ## Fitur CMS

@@ -9,8 +9,13 @@ Perbaikan:
 Cara memasang:
 1. Ekstrak ZIP ini.
 2. Upload semua isi folder ke root repository GitHub dan pilih Replace untuk file yang sama.
-3. Pastikan index.html, main.js, style.css, config.js, admin.html, admin.js, schema.sql, seed.sql, dan folder assets ada di root sesuai struktur ZIP.
+3. Pastikan index.html, main.js, style.css, config.js, admin.html, admin.js, schema.sql, seed.sql, dan seluruh folder assets diunggah. Khusus logo ADB: pastikan file assets/adb-creative-team-logo.webp ikut terunggah.
 4. Tunggu GitHub Pages selesai deploy.
 5. Buka ulang website. Jika masih versi lama, refresh paksa atau hapus cache browser.
 
 Catatan: Perubahan ini memperbaiki tampilan CSS. Tidak mengubah database atau kredensial Supabase.
+
+Perbaikan logo terbaru:
+- Header website, footer, dan dashboard admin sekarang menggunakan file assets/adb-creative-team-logo.webp yang sama.
+- Ukuran logo mengikuti rasio aslinya dan memakai object-fit: contain agar tidak terpotong di desktop, tablet, maupun HP.
+- Nama file logo baru dibuat khusus agar tidak tertukar dengan logo sekolah lama.
